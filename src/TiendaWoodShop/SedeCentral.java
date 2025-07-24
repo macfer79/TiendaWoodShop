@@ -4,36 +4,37 @@ public class SedeCentral {
     /**
      * Atributos de la clase SedeCentral
      */
-    String nif;
-    String nombre;
+    String nifEmpresa;
+    String nombreEmpresa;
 
     /**
      * Constructor de la clase SedeCentral
-     * @param nif
+     * @param nifEmpresa
+     * @param nombreEmpresa
      */
-    public SedeCentral(String nombre, String nif) {
-        this.nombre = nombre;
-        this.nif = nif;
+    public SedeCentral(String nifEmpresa, String nombreEmpresa) {
+        this.nifEmpresa = nifEmpresa;
+        this.nombreEmpresa = nombreEmpresa;
     }
 
     /**
      * Getters & Setters de la clase SedeCentral
      * @return
      */
-    public String getNif() {
-        return nif;
+    public String getNifEmpresa() {
+        return nifEmpresa;
     }
 
-    public void setNif(String nif) {
-        this.nif = nif;
+    public void setNifEmpresa(String nifEmpresa) {
+        this.nifEmpresa = nifEmpresa;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreEmpresa() {
+        return nombreEmpresa;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreEmpresa(String nombreEmpresa) {
+        this.nombreEmpresa = nombreEmpresa;
     }
 
     /**
@@ -43,8 +44,8 @@ public class SedeCentral {
     @Override
     public String toString() {
         return "SedeCentral{" +
-                "nif='" + nif + '\'' +
-                ", nombre='" + nombre + '\'' +
+                "nifEmpresa='" + nifEmpresa + '\'' +
+                ", nombreEmpresa='" + nombreEmpresa + '\'' +
                 '}';
     }
 }
